@@ -1,3 +1,7 @@
+/* =========================================
+   1. Global Reset & Base Styles
+   ========================================= */
+
 * {
     margin: 0;
     padding: 0;
@@ -10,10 +14,45 @@ body {
     background-color: #fafafa;
 }
 
-/* NAVBAR */
+/* =========================================
+   2. Layout Helpers
+   ========================================= */
+
+/* Main content spacing */
+main {
+    padding: 2.5rem 1rem;
+}
+
+/* Generic page wrapper for inner pages */
+.page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2.5rem 1rem 3rem;
+}
+
+/* Shared page header styles */
+.page-header {
+    max-width: 750px;
+    margin-bottom: 2rem;
+}
+
+.page-header h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.page-header p {
+    color: #555;
+    line-height: 1.6;
+}
+
+/* =========================================
+   3. Navigation Bar
+   ========================================= */
+
 .navbar {
     background: #fff;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -34,7 +73,7 @@ body {
     letter-spacing: 0.5px;
 }
 
-/* NAV LINKS */
+/* Nav links */
 .nav-links {
     list-style: none;
     display: flex;
@@ -45,19 +84,26 @@ body {
     text-decoration: none;
     color: #333;
     font-weight: 500;
-    transition: color .3s ease;
+    transition: color 0.3s ease;
 }
 
+/* Hover + active state */
 .nav-links li a:hover {
     color: #0078ff;
 }
 
-/* HAMBURGER */
+.nav-links .active {
+    color: #0078ff;
+}
+
+/* Hamburger (mobile menu toggle) */
 .hamburger {
     display: none;
     flex-direction: column;
     gap: 5px;
     cursor: pointer;
+    background: none;
+    border: none;
 }
 
 .hamburger span {
@@ -67,49 +113,9 @@ body {
     transition: 0.3s ease;
 }
 
-/* FOOTER */
-.footer {
-    text-align: center;
-    padding: 2rem 0;
-    margin-top: 3rem;
-    background-color: #fff;
-    box-shadow: 0 -2px 6px rgba(0,0,0,0.05);
-}
-
-.footer p {
-    color: #555;
-    font-size: 0.9rem;
-}
-
-/* RESPONSIVE */
-@media (max-width: 768px) {
-    .nav-links {
-        position: absolute;
-        top: 70px;
-        right: 0;
-        background: #fff;
-        width: 200px;
-        flex-direction: column;
-        display: none;
-        padding: 1rem 0;
-        border-left: 1px solid #eee;
-        border-bottom: 1px solid #eee;
-        gap: 1.2rem;
-    }
-
-    .nav-links.show {
-        display: flex;
-    }
-
-    .hamburger {
-        display: flex;
-    }
-}
-
-/* MAIN / HERO SECTION */
-main {
-    padding: 2.5rem 1rem;
-}
+/* =========================================
+   4. Hero (Home Page)
+   ========================================= */
 
 .hero {
     max-width: 1200px;
@@ -152,45 +158,10 @@ main {
     color: #333;
 }
 
-/* Active nav link */
-.nav-links .active {
-    color: #0078ff;
-}
+/* =========================================
+   5. Skills Page
+   ========================================= */
 
-/* Responsive tweaks */
-@media (min-width: 768px) {
-    .hero-inner {
-        min-height: 70vh;
-    }
-
-    .hero h1 {
-        font-size: 2.4rem;
-    }
-}
-
-/* GENERIC PAGE LAYOUT */
-.page {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2.5rem 1rem 3rem;
-}
-
-.page-header {
-    max-width: 750px;
-    margin-bottom: 2rem;
-}
-
-.page-header h1 {
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
-}
-
-.page-header p {
-    color: #555;
-    line-height: 1.6;
-}
-
-/* SKILLS GRID */
 .skills-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -201,7 +172,7 @@ main {
     background: #fff;
     border-radius: 6px;
     padding: 1.5rem;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
 }
 
 .skills-card h2 {
@@ -209,6 +180,7 @@ main {
     margin-bottom: 1rem;
 }
 
+/* Shared list styles used across pages */
 .simple-list {
     list-style: none;
 }
@@ -229,18 +201,10 @@ main {
     list-style: disc;
 }
 
-/* Wider screens */
-@media (min-width: 768px) {
-    .skills-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
+/* =========================================
+   6. Business Showcase Page
+   ========================================= */
 
-    .page-header h1 {
-        font-size: 2.2rem;
-    }
-}
-
-/* BUSINESS SHOWCASE / PROJECTS */
 .projects-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -251,7 +215,7 @@ main {
     background: #fff;
     border-radius: 6px;
     padding: 1.5rem;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
 }
 
 .project-card h2 {
@@ -270,32 +234,23 @@ main {
     margin-bottom: 0.5rem;
 }
 
-/* Reuse simple-list styling from skills page if you like:
-   .simple-list { list-style: none; } */
-@media (min-width: 768px) {
-    .projects-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
+/* =========================================
+   7. Problem-Solving Page
+   ========================================= */
 
-    /* Make the Problem-Solving project span full width if you want */
-    .projects-grid .project-card:last-child {
-        grid-column: 1 / -1;
-    }
-}
-
-/* PROBLEM-SOLVING LAYOUT */
 .problem-layout {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1.5rem;
 }
 
+/* Info (left) and form (right) panels */
 .info-panel,
 .form-panel {
     background: #fff;
     border-radius: 6px;
     padding: 1.5rem;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
 }
 
 .info-panel h2,
@@ -311,7 +266,7 @@ main {
     margin-bottom: 0.5rem;
 }
 
-/* Contact & Social Cards */
+/* Contact & social cards inside info panel */
 .contact-card,
 .social-card {
     margin-top: 1.25rem;
@@ -321,6 +276,7 @@ main {
     background: #fafafa;
 }
 
+/* Social link list */
 .social-links {
     list-style: none;
     display: flex;
@@ -339,7 +295,7 @@ main {
     border-color: #0078ff;
 }
 
-/* FORM STYLING */
+/* Form styling */
 .form-row {
     display: flex;
     flex-direction: column;
@@ -366,9 +322,10 @@ main {
 .form-row textarea:focus {
     outline: none;
     border-color: #0078ff;
-    box-shadow: 0 0 0 2px rgba(0,120,255,0.15);
+    box-shadow: 0 0 0 2px rgba(0, 120, 255, 0.15);
 }
 
+/* Inline form rows (date + time) */
 .form-row-inline {
     gap: 0.75rem;
 }
@@ -400,14 +357,14 @@ main {
     text-align: center;
 }
 
-/* Email Preview Section */
+/* Email preview block */
 .email-preview-section {
     margin-top: 1.5rem;
     border-top: 1px solid #eee;
     padding-top: 1rem;
 }
 
-/* Design notes */
+/* Design notes section (used on multiple pages) */
 .design-notes {
     margin-top: 2rem;
 }
@@ -421,18 +378,10 @@ main {
     margin-bottom: 0.5rem;
 }
 
-/* Responsive layout */
-@media (min-width: 768px) {
-    .problem-layout {
-        grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
-    }
+/* =========================================
+   8. Contact Page
+   ========================================= */
 
-    .form-row-inline {
-        flex-direction: row;
-    }
-}
-
-/* CONTACT PAGE */
 .contact-wrapper {
     display: grid;
     grid-template-columns: 1fr;
@@ -443,7 +392,7 @@ main {
     background: #fff;
     border-radius: 6px;
     padding: 1.5rem;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 .contact-card-lg h2 {
@@ -470,8 +419,91 @@ main {
     text-decoration: underline;
 }
 
-/* Responsive layout */
+/* =========================================
+   9. Footer
+   ========================================= */
+
+.footer {
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 3rem;
+    background-color: #fff;
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.footer p {
+    color: #555;
+    font-size: 0.9rem;
+}
+
+/* =========================================
+   10. Responsive Adjustments
+   ========================================= */
+
+/* Small screens: mobile navigation */
+@media (max-width: 768px) {
+    .nav-links {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background: #fff;
+        width: 200px;
+        flex-direction: column;
+        display: none;
+        padding: 1rem 0;
+        border-left: 1px solid #eee;
+        border-bottom: 1px solid #eee;
+        gap: 1.2rem;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
+
+/* Medium+ screens */
 @media (min-width: 768px) {
+    /* Hero height and heading size */
+    .hero-inner {
+        min-height: 70vh;
+    }
+
+    .hero h1 {
+        font-size: 2.4rem;
+    }
+
+    /* Skills grid: two columns */
+    .skills-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .page-header h1 {
+        font-size: 2.2rem;
+    }
+
+    /* Business projects: two columns, last card full width */
+    .projects-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .projects-grid .project-card:last-child {
+        grid-column: 1 / -1;
+    }
+
+    /* Problem-solving layout: two columns */
+    .problem-layout {
+        grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+    }
+
+    .form-row-inline {
+        flex-direction: row;
+    }
+
+    /* Contact page: two columns */
     .contact-wrapper {
         grid-template-columns: repeat(2, 1fr);
     }
