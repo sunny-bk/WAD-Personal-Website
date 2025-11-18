@@ -167,3 +167,312 @@ main {
         font-size: 2.4rem;
     }
 }
+
+/* GENERIC PAGE LAYOUT */
+.page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2.5rem 1rem 3rem;
+}
+
+.page-header {
+    max-width: 750px;
+    margin-bottom: 2rem;
+}
+
+.page-header h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.page-header p {
+    color: #555;
+    line-height: 1.6;
+}
+
+/* SKILLS GRID */
+.skills-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.skills-card {
+    background: #fff;
+    border-radius: 6px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.skills-card h2 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.simple-list {
+    list-style: none;
+}
+
+.simple-list li {
+    margin-bottom: 0.75rem;
+    line-height: 1.6;
+}
+
+.meta {
+    font-size: 0.85rem;
+    color: #777;
+}
+
+.nested-list {
+    margin-top: 0.35rem;
+    margin-left: 1.25rem;
+    list-style: disc;
+}
+
+/* Wider screens */
+@media (min-width: 768px) {
+    .skills-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .page-header h1 {
+        font-size: 2.2rem;
+    }
+}
+
+/* BUSINESS SHOWCASE / PROJECTS */
+.projects-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.project-card {
+    background: #fff;
+    border-radius: 6px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.project-card h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.75rem;
+}
+
+.project-card h3 {
+    font-size: 1rem;
+    margin-top: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.project-card p {
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
+}
+
+/* Reuse simple-list styling from skills page if you like:
+   .simple-list { list-style: none; } */
+@media (min-width: 768px) {
+    .projects-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    /* Make the Problem-Solving project span full width if you want */
+    .projects-grid .project-card:last-child {
+        grid-column: 1 / -1;
+    }
+}
+
+/* PROBLEM-SOLVING LAYOUT */
+.problem-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.info-panel,
+.form-panel {
+    background: #fff;
+    border-radius: 6px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.info-panel h2,
+.form-panel h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.75rem;
+}
+
+.info-panel h3,
+.form-panel h3 {
+    font-size: 1rem;
+    margin-top: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Contact & Social Cards */
+.contact-card,
+.social-card {
+    margin-top: 1.25rem;
+    padding: 1rem;
+    border-radius: 6px;
+    border: 1px solid #eee;
+    background: #fafafa;
+}
+
+.social-links {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 0.5rem;
+}
+
+.social-links a {
+    text-decoration: none;
+    font-size: 0.95rem;
+    border-bottom: 1px solid transparent;
+}
+
+.social-links a:hover {
+    border-color: #0078ff;
+}
+
+/* FORM STYLING */
+.form-row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.9rem;
+}
+
+.form-row label {
+    font-size: 0.9rem;
+    margin-bottom: 0.25rem;
+    color: #444;
+}
+
+.form-row input,
+.form-row select,
+.form-row textarea {
+    padding: 0.55rem 0.6rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font: inherit;
+}
+
+.form-row input:focus,
+.form-row select:focus,
+.form-row textarea:focus {
+    outline: none;
+    border-color: #0078ff;
+    box-shadow: 0 0 0 2px rgba(0,120,255,0.15);
+}
+
+.form-row-inline {
+    gap: 0.75rem;
+}
+
+.form-row-inline > div {
+    flex: 1;
+}
+
+/* Buttons */
+.primary-btn {
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    font: inherit;
+    background: #0078ff;
+    color: #fff;
+    transition: background 0.2s ease;
+}
+
+.primary-btn:hover {
+    background: #005fcc;
+}
+
+.secondary-btn {
+    margin-top: 0.5rem;
+    text-align: center;
+}
+
+/* Email Preview Section */
+.email-preview-section {
+    margin-top: 1.5rem;
+    border-top: 1px solid #eee;
+    padding-top: 1rem;
+}
+
+/* Design notes */
+.design-notes {
+    margin-top: 2rem;
+}
+
+.design-notes h2 {
+    font-size: 1.3rem;
+    margin-bottom: 0.75rem;
+}
+
+.design-notes p {
+    margin-bottom: 0.5rem;
+}
+
+/* Responsive layout */
+@media (min-width: 768px) {
+    .problem-layout {
+        grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+    }
+
+    .form-row-inline {
+        flex-direction: row;
+    }
+}
+
+/* CONTACT PAGE */
+.contact-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.contact-card-lg {
+    background: #fff;
+    border-radius: 6px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.contact-card-lg h2 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.contact-list {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-list li {
+    margin-bottom: 0.7rem;
+    line-height: 1.6;
+}
+
+.contact-list a {
+    text-decoration: none;
+    color: #0078ff;
+}
+
+.contact-list a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive layout */
+@media (min-width: 768px) {
+    .contact-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

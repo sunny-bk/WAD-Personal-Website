@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio – Business Showcase</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="logo">MyPortfolio</div>
+
+            <nav aria-label="Main navigation">
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="business.html" class="active">Business Showcase</a></li>
+                    <li><a href="showcase.html">Showcase</a></li>
+                    <li><a href="problem-solving.html">Problem-Solving</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="page" id="business-showcase">
+        <header class="page-header">
+            <h1>Business Showcase</h1>
+            <p>
+                A summary of three digital projects I’ve been involved in, highlighting my role,
+                the problem addressed, and the outcomes – including the design concept behind the Problem-Solving Page
+                for the restaurant’s digital transformation.
+            </p>
+        </header>
+
+        <section class="projects-grid">
+
+            <!-- PROJECT 1 -->
+            <article class="project-card">
+                <h2>Project 1: Restaurant Digital Transformation Website</h2>
+                <p><strong>Role:</strong> Chief Technology Officer (CTO) – Local Restaurant (Project Role)</p>
+                <p><strong>Problem:</strong> The restaurant lacked a clear online presence, making it difficult for customers to
+                    find information, view the menu, and understand how to contact or visit the venue.</p>
+                <p><strong>Outcome:</strong> Planned and developed a multi-page, responsive website focused on:
+                    a professional Home page, a clear Skills/CTO profile, a business-focused showcase, a Problem-Solving
+                    support page, and a dedicated Contact page. This structure supports the restaurant’s digital brand,
+                    gives customers a trusted first impression, and creates a foundation for future online bookings and promotions.</p>
+            </article>
+
+            <!-- PROJECT 2 -->
+            <article class="project-card">
+                <h2>Project 2: Online Booking & Menu Explorer (Course Assignment)</h2>
+                <p><strong>Role:</strong> Web Developer – Group Assignment</p>
+                <p><strong>Problem:</strong> Many small hospitality venues struggle to present menus and handle bookings
+                    without relying on third-party platforms that can be confusing or expensive.</p>
+                <p><strong>Outcome:</strong> Contributed to the design and build of a simple web prototype where users could:
+                    browse a structured menu, check basic availability, and submit a booking request online.
+                    My focus was on clean page layout, logical navigation, and making sure the booking form captured
+                    the key information staff would need (date, time, party size, contact details) in a user-friendly way.</p>
+            </article>
+
+            <!-- PROJECT 3: PROBLEM-SOLVING PAGE CONCEPT -->
+            <article class="project-card">
+                <h2>Project 3: Problem-Solving Page – Support & Contact Hub</h2>
+                <p><strong>Role:</strong> UX & Front-End Designer / CTO (Project Role)</p>
+                <p><strong>Problem:</strong> The restaurant needed a central place for customers to ask questions, give feedback,
+                    and connect via social media. Existing channels were scattered, which risked missed messages and a poor customer experience.</p>
+                <p><strong>Outcome:</strong> Designed the Problem-Solving Page as a dedicated “help and contact” hub that:
+                    integrates social media links, clearly displays contact details, and includes an interactive form
+                    that generates email content from user inputs. This makes it easier for customers to communicate
+                    clearly and helps the restaurant respond more efficiently.</p>
+
+                <h3>Design Concept for the Problem-Solving Page</h3>
+                <ul class="simple-list">
+                    <li>
+                        <strong>Structured layout:</strong> The page is divided into clear sections: an introduction at the top,
+                        a block for contact details, a section for social media links, and an interactive form.
+                        This helps customers quickly see the options and choose how they want to reach out.
+                    </li>
+                    <li>
+                        <strong>Contact details first:</strong> Key information (address, phone number, business email,
+                        and opening hours) is grouped together in a card-style layout so customers can quickly find
+                        practical details without scrolling through the whole page.
+                    </li>
+                    <li>
+                        <strong>Social media integration:</strong> Social icons/links (e.g. Instagram, Facebook, X)
+                        are grouped under a “Connect with us” heading. This supports the restaurant’s digital brand
+                        and encourages ongoing engagement beyond a single visit.
+                    </li>
+                    <li>
+                        <strong>Interactive email form:</strong> The form collects the customer’s name, email address,
+                        enquiry type, and message. JavaScript is used to generate a clear email-style summary
+                        (subject line + body) based on the inputs, helping customers send structured information that’s
+                        easier for staff to respond to.
+                    </li>
+                    <li>
+                        <strong>User-friendly and accessible:</strong> Labels, placeholder text, and basic validation
+                        are planned to make the form easy to use on both mobile and desktop. The design supports
+                        different user goals – from booking questions to feedback and complaints – without overwhelming them.
+                    </li>
+                </ul>
+            </article>
+
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>&copy; <span id="year"></span> [Your Name]. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
