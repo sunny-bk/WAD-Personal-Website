@@ -4,14 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio – Business Showcase</title>
+    <meta name="description" content="Business-focused project portfolio, including restaurant support hub, e-commerce launch, and VOIP calling system." />
     <link rel="stylesheet" href="styles.css" />
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    />
 </head>
 <body>
+    <a href="#business-showcase" class="skip-link">Skip to main content</a>
 
-    <!-- NAVIGATION BAR -->
     <header class="navbar">
         <div class="nav-container">
-            <div class="logo">MyPortfolio</div>
+            <div class="logo">Bhuvan K.</div>
 
             <nav aria-label="Main navigation">
                 <ul class="nav-links" id="nav-links">
@@ -23,7 +31,14 @@
                 </ul>
             </nav>
 
-            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+            <button
+                class="hamburger"
+                id="hamburger"
+                type="button"
+                aria-label="Toggle navigation menu"
+                aria-controls="nav-links"
+                aria-expanded="false"
+            >
                 <span></span>
                 <span></span>
                 <span></span>
@@ -31,91 +46,235 @@
         </div>
     </header>
 
-    <!-- MAIN CONTENT -->
     <main class="page" id="business-showcase">
         <header class="page-header">
+            <p class="eyebrow">Project Portfolio</p>
             <h1>Business Showcase</h1>
             <p>
-                A summary of three digital projects I’ve been involved in, highlighting my role,
-                the problem addressed, and the outcomes – including the design concept behind the Problem-Solving Page
-                for the restaurant’s digital transformation.
+                A summary of three digital projects I have worked on, highlighting my role, the problem addressed, and the outcomes –
+                including the design concept behind the Problem-Solving Page for the restaurant’s digital transformation.
             </p>
         </header>
 
-        <section class="projects-grid">
+        <section class="projects-hero" aria-label="Types of projects">
+            <div class="projects-hero-left">
+                <p class="projects-hero-label">Project Types</p>
+                <div class="project-type-chips">
+                    <span class="project-chip">
+                        <i class="fa-solid fa-utensils" aria-hidden="true"></i>
+                        <span>Restaurant Support &amp; Booking Hub</span>
+                    </span>
+                    <span class="project-chip">
+                        <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                        <span>E-commerce Digital Launch</span>
+                    </span>
+                    <span class="project-chip">
+                        <i class="fa-solid fa-phone-volume" aria-hidden="true"></i>
+                        <span>VOIP International Calling System</span>
+                    </span>
+                </div>
+            </div>
 
-            <!-- PROJECT 1 -->
-            <article class="project-card">
-                <h2>Project 1: Restaurant Digital Transformation Website</h2>
-                <p><strong>Role:</strong> Chief Technology Officer (CTO) – Local Restaurant (Project Role)</p>
-                <p><strong>Problem:</strong> The restaurant lacked a clear online presence, making it difficult for customers to
-                    find information, view the menu, and understand how to contact or visit the venue.</p>
-                <p><strong>Outcome:</strong> Planned and developed a multi-page, responsive website focused on:
-                    a professional Home page, a clear Skills/CTO profile, a business-focused showcase, a Problem-Solving
-                    support page, and a dedicated Contact page. This structure supports the restaurant’s digital brand,
-                    gives customers a trusted first impression, and creates a foundation for future online bookings and promotions.</p>
-            </article>
+            <div class="projects-hero-right">
+                <p class="projects-hero-caption">
+                    Each project follows a simple pattern: understand the business problem, design a clear user journey,
+                    and deliver an effective solution with measurable outcomes.
+                </p>
+            </div>
+        </section>
 
-            <!-- PROJECT 2 -->
-            <article class="project-card">
-                <h2>Project 2: Online Booking & Menu Explorer (Course Assignment)</h2>
-                <p><strong>Role:</strong> Web Developer – Group Assignment</p>
-                <p><strong>Problem:</strong> Many small hospitality venues struggle to present menus and handle bookings
-                    without relying on third-party platforms that can be confusing or expensive.</p>
-                <p><strong>Outcome:</strong> Contributed to the design and build of a simple web prototype where users could:
-                    browse a structured menu, check basic availability, and submit a booking request online.
-                    My focus was on clean page layout, logical navigation, and making sure the booking form captured
-                    the key information staff would need (date, time, party size, contact details) in a user-friendly way.</p>
-            </article>
+        <section class="projects-accordion" aria-label="Project case studies">
+            <details class="project-card" open>
+                <summary>
+                    <span class="project-summary-icon">
+                        <i class="fa-solid fa-utensils" aria-hidden="true"></i>
+                    </span>
+                    <span class="project-summary-text">
+                        <span class="project-summary-title">Project 1: Restaurant Support &amp; Booking Hub</span>
+                        <span class="project-summary-subtitle">Problem-Solving Page for a local restaurant</span>
+                    </span>
+                    <span class="project-summary-role">
+                        CTO / UX &amp; Front-End Designer · Project Role
+                    </span>
+                    <span class="summary-chevron">
+                        <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+                    </span>
+                </summary>
 
-            <!-- PROJECT 3: PROBLEM-SOLVING PAGE CONCEPT -->
-            <article class="project-card">
-                <h2>Project 3: Problem-Solving Page – Support & Contact Hub</h2>
-                <p><strong>Role:</strong> UX & Front-End Designer / CTO (Project Role)</p>
-                <p><strong>Problem:</strong> The restaurant needed a central place for customers to ask questions, give feedback,
-                    and connect via social media. Existing channels were scattered, which risked missed messages and a poor customer experience.</p>
-                <p><strong>Outcome:</strong> Designed the Problem-Solving Page as a dedicated “help and contact” hub that:
-                    integrates social media links, clearly displays contact details, and includes an interactive form
-                    that generates email content from user inputs. This makes it easier for customers to communicate
-                    clearly and helps the restaurant respond more efficiently.</p>
+                <div class="project-card-body">
+                    <dl class="project-meta">
+                        <div>
+                            <dt>Role</dt>
+                            <dd>
+                                CTO and UX &amp; Front-End Designer (project role), responsible for planning,
+                                designing, and building a single-page support and booking hub that acts as the
+                                restaurant’s digital front desk.
+                            </dd>
+                        </div>
 
-                <h3>Design Concept for the Problem-Solving Page</h3>
-                <ul class="simple-list">
-                    <li>
-                        <strong>Structured layout:</strong> The page is divided into clear sections: an introduction at the top,
-                        a block for contact details, a section for social media links, and an interactive form.
-                        This helps customers quickly see the options and choose how they want to reach out.
-                    </li>
-                    <li>
-                        <strong>Contact details first:</strong> Key information (address, phone number, business email,
-                        and opening hours) is grouped together in a card-style layout so customers can quickly find
-                        practical details without scrolling through the whole page.
-                    </li>
-                    <li>
-                        <strong>Social media integration:</strong> Social icons/links (e.g. Instagram, Facebook, X)
-                        are grouped under a “Connect with us” heading. This supports the restaurant’s digital brand
-                        and encourages ongoing engagement beyond a single visit.
-                    </li>
-                    <li>
-                        <strong>Interactive email form:</strong> The form collects the customer’s name, email address,
-                        enquiry type, and message. JavaScript is used to generate a clear email-style summary
-                        (subject line + body) based on the inputs, helping customers send structured information that’s
-                        easier for staff to respond to.
-                    </li>
-                    <li>
-                        <strong>User-friendly and accessible:</strong> Labels, placeholder text, and basic validation
-                        are planned to make the form easy to use on both mobile and desktop. The design supports
-                        different user goals – from booking questions to feedback and complaints – without overwhelming them.
-                    </li>
-                </ul>
-            </article>
+                        <div>
+                            <dt>Problem</dt>
+                            <dd>
+                                The restaurant relied on scattered channels such as phone calls and social messages
+                                for enquiries and bookings. Customers could not easily see opening hours, contact options,
+                                or how to request a table in one clear place, which risked missed messages and lost bookings.
+                            </dd>
+                        </div>
 
+                        <div>
+                            <dt>Outcome</dt>
+                            <dd>
+                                Designed and built an app-style support and booking hub that:
+                                <ul class="nested-list">
+                                    <li>features a branded banner with rating and opening hours for quick reassurance,</li>
+                                    <li>includes cards for <em>Visit &amp; Contact</em>, <em>Popular Dishes</em>, and <em>Follow Riverside</em>,</li>
+                                    <li>provides a guided enquiry and booking form with optional booking details,</li>
+                                    <li>uses JavaScript to generate a structured email subject and body from user inputs,</li>
+                                    <li>creates a mailto link so customers can open the message directly in their email app.</li>
+                                </ul>
+                                The hub gives customers one clear place to book, ask questions, and connect with the restaurant,
+                                while giving staff consistent, well-structured enquiries to respond to.
+                            </dd>
+                        </div>
+                    </dl>
+
+                    <h2>Design concept</h2>
+                    <p>
+                        The page is intentionally designed to feel like a modern restaurant app: a dark, atmospheric theme,
+                        a hero banner with key details, and modular cards for contact, menu highlights, and social links.
+                        The layout keeps the booking form central while still working well on mobile screens, turning a
+                        previously fragmented experience into a single, focused support hub.
+                    </p>
+                </div>
+            </details>
+
+            <details class="project-card">
+                <summary>
+                    <span class="project-summary-icon">
+                        <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                    </span>
+                    <span class="project-summary-text">
+                        <span class="project-summary-title">Project 2: E-Commerce Brand &amp; Digital Launch</span>
+                        <span class="project-summary-subtitle">Work placement – full digital presence build</span>
+                    </span>
+                    <span class="project-summary-role">
+                        Digital Solutions Assistant · Work Placement
+                    </span>
+                    <span class="summary-chevron">
+                        <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+                    </span>
+                </summary>
+
+                <div class="project-card-body">
+                    <dl class="project-meta">
+                        <div>
+                            <dt>Role</dt>
+                            <dd>
+                                Digital Solutions Assistant, contributing to the design, build, and optimisation of a complete
+                                digital presence for a mock e-commerce brand. Focused on web development, SEO, and digital strategy.
+                            </dd>
+                        </div>
+
+                        <div>
+                            <dt>Problem</dt>
+                            <dd>
+                                The company needed a functional online presence but had no brand identity, no market insight,
+                                and no website capable of ranking for relevant search terms. Without these foundations it would
+                                struggle to attract traffic or convert users.
+                            </dd>
+                        </div>
+
+                        <div>
+                            <dt>Outcome</dt>
+                            <dd>
+                                Delivered a complete digital launch package, including:
+                                <ul class="nested-list">
+                                    <li>designing a professional brand identity using Adobe Photoshop,</li>
+                                    <li>building an SEO-optimised e-commerce website,</li>
+                                    <li>conducting keyword and competitor research to target niche opportunities,</li>
+                                    <li>achieving first-page visibility for chosen search terms,</li>
+                                    <li>writing content and blog posts to boost organic traffic,</li>
+                                    <li>identifying high-authority backlink opportunities to improve domain trust.</li>
+                                </ul>
+                                This strengthened the brand’s credibility and created a sustainable flow of organic traffic.
+                            </dd>
+                        </div>
+                    </dl>
+                </div>
+            </details>
+
+            <details class="project-card">
+                <summary>
+                    <span class="project-summary-icon">
+                        <i class="fa-solid fa-phone-volume" aria-hidden="true"></i>
+                    </span>
+                    <span class="project-summary-text">
+                        <span class="project-summary-title">Project 3: VOIP International Calling System</span>
+                        <span class="project-summary-subtitle">Custom calling platform for a growing local business</span>
+                    </span>
+                    <span class="project-summary-role">
+                        Technical Developer · Independent Project
+                    </span>
+                    <span class="summary-chevron">
+                        <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+                    </span>
+                </summary>
+
+                <div class="project-card-body">
+                    <dl class="project-meta">
+                        <div>
+                            <dt>Role</dt>
+                            <dd>
+                                Technical Developer responsible for sourcing a VOIP provider, integrating their API, and building
+                                a simple front-end interface for international calling.
+                            </dd>
+                        </div>
+
+                        <div>
+                            <dt>Problem</dt>
+                            <dd>
+                                A small business relied on costly international calls for client communication. Their existing
+                                phone system was unreliable, expensive, and slowed down their ability to scale into new markets.
+                            </dd>
+                        </div>
+
+                        <div>
+                            <dt>Outcome</dt>
+                            <dd>
+                                Delivered a lightweight, cost-effective VOIP solution by:
+                                <ul class="nested-list">
+                                    <li>researching and onboarding a reliable VOIP provider,</li>
+                                    <li>integrating their API into a simple web interface built with HTML, CSS, and JavaScript,</li>
+                                    <li>allowing staff to make international calls securely through a browser,</li>
+                                    <li>reducing communication costs and improving global accessibility,</li>
+                                    <li>giving the business a scalable communication tool for future expansion.</li>
+                                </ul>
+                                The system removed a major operational bottleneck and significantly improved communication speed and reliability.
+                            </dd>
+                        </div>
+                    </dl>
+                </div>
+            </details>
         </section>
     </main>
 
-    <!-- FOOTER -->
     <footer class="footer">
-        <p>&copy; <span id="year"></span> [Your Name]. All Rights Reserved.</p>
+        <div class="footer-inner">
+            <p class="footer-text">
+                <i class="fa-regular fa-copyright" aria-hidden="true"></i>
+                <span id="year"></span> Bhuvan K. · Built with HTML, CSS &amp; JavaScript
+            </p>
+            <div class="footer-social">
+                <a
+                    href="https://github.com/sunny-bk"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Visit my GitHub profile (opens in a new tab)"
+                >
+                    <i class="fa-brands fa-github" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
     </footer>
 
     <script src="script.js"></script>

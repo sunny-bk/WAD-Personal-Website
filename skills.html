@@ -4,14 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio – Skills</title>
+    <meta name="description" content="Overview of technical skills, education, work experience, and certifications in digital and web technologies." />
     <link rel="stylesheet" href="styles.css" />
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    />
 </head>
 <body>
+    <a href="#skills" class="skip-link">Skip to main content</a>
 
-    <!-- NAVIGATION BAR -->
     <header class="navbar">
         <div class="nav-container">
-            <div class="logo">MyPortfolio</div>
+            <div class="logo">Bhuvan K.</div>
 
             <nav aria-label="Main navigation">
                 <ul class="nav-links" id="nav-links">
@@ -23,7 +31,14 @@
                 </ul>
             </nav>
 
-            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+            <button
+                class="hamburger"
+                id="hamburger"
+                type="button"
+                aria-label="Toggle navigation menu"
+                aria-controls="nav-links"
+                aria-expanded="false"
+            >
                 <span></span>
                 <span></span>
                 <span></span>
@@ -31,80 +46,245 @@
         </div>
     </header>
 
-    <!-- MAIN CONTENT -->
     <main class="page" id="skills">
         <header class="page-header">
-            <h1>Skills & Experience</h1>
-            <p>A structured overview of my digital skills, education, and experience as CTO for a local restaurant’s web transformation project.</p>
+            <h1>Skills &amp; Experience</h1>
+            <p>
+                A structured overview of my digital skills, education, and project experience in my role as CTO for a
+                local restaurant’s web transformation project.
+            </p>
         </header>
 
-        <section class="skills-grid">
-            <!-- DIGITAL SKILLS -->
-            <article class="skills-card">
-                <h2>Digital Skills</h2>
-                <ul class="simple-list">
-                    <li><strong>Web Development:</strong> HTML5, CSS3, JavaScript (ES6+), responsive design</li>
-                    <li><strong>Frontend Practices:</strong> semantic markup, accessibility awareness, mobile-first layouts</li>
-                    <li><strong>Web-Based Solutions for Restaurants:</strong> menu pages, booking flows, contact forms, basic content management</li>
-                    <li><strong>Tools & Workflow:</strong> Git & GitHub, VS Code, browser DevTools</li>
-                    <li><strong>Digital Confidence:</strong> comfortable researching solutions, testing designs, and iterating on user feedback</li>
-                </ul>
-            </article>
+        <section class="skills-hero" aria-label="Core technologies and strengths">
+            <div class="skills-hero-left">
+                <p class="skills-hero-label">Core Technologies</p>
 
-            <!-- EDUCATION -->
-            <article class="skills-card">
-                <h2>Education & Qualifications</h2>
-                <ul class="simple-list">
-                    <li>
-                        <strong>[Your Current Course]</strong><br />
-                        Focus on web development, user experience, and practical digital projects.<br />
-                        <span class="meta">[Institution Name] · [Start Year] – Present</span>
-                    </li>
-                    <li>
-                        <strong>Previous Studies</strong><br />
-                        Foundation in computing / IT, problem-solving, and applied digital skills.<br />
-                        <span class="meta">[College / School Name] · [Year Completed]</span>
-                    </li>
-                </ul>
-            </article>
+                <div class="skills-icon-stack" aria-hidden="true">
+                    <div class="skills-icon-circle icon-html">
+                        <i class="fa-brands fa-html5"></i>
+                    </div>
+                    <div class="skills-icon-circle icon-css">
+                        <i class="fa-brands fa-css3-alt"></i>
+                    </div>
+                    <div class="skills-icon-circle icon-js">
+                        <i class="fa-brands fa-js"></i>
+                    </div>
+                    <div class="skills-icon-circle icon-python">
+                        <i class="fa-brands fa-python"></i>
+                    </div>
+                    <div class="skills-icon-circle icon-php">
+                        <i class="fa-brands fa-php"></i>
+                    </div>
+                </div>
+            </div>
 
-            <!-- WORK EXPERIENCE -->
-            <article class="skills-card">
-                <h2>Work Experience</h2>
-                <ul class="simple-list">
+            <div class="skills-hero-right">
+                <ul class="skills-tags">
                     <li>
-                        <strong>Chief Technology Officer (Project Role)</strong><br />
-                        <span class="meta">Local Restaurant · Digital Transformation Project</span><br />
-                        Designing and building a web-based solution to support the restaurant’s online presence, including:
-                        <ul class="nested-list">
-                            <li>Planning a simple, user-friendly website structure</li>
-                            <li>Creating pages for menu, booking, and contact</li>
-                            <li>Ensuring the site works smoothly on mobile and desktop</li>
-                        </ul>
+                        <i class="fa-solid fa-comments" aria-hidden="true"></i>
+                        <span>Clear technical communication</span>
                     </li>
                     <li>
-                        <strong>Previous Experience (if applicable)</strong><br />
-                        <span class="meta">Part-time / volunteer roles</span><br />
-                        Experience working with people, managing time, and using digital tools in everyday tasks.
+                        <i class="fa-solid fa-people-group" aria-hidden="true"></i>
+                        <span>Collaborative problem solving</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-list-check" aria-hidden="true"></i>
+                        <span>Translating ideas into actionable tech plans</span>
                     </li>
                 </ul>
-            </article>
+            </div>
+        </section>
 
-            <!-- CERTIFICATIONS -->
-            <article class="skills-card">
-                <h2>Certifications & Training</h2>
-                <ul class="simple-list">
-                    <li><strong>Introductory Web Development Training</strong> – HTML, CSS, and basic JavaScript for building websites</li>
-                    <li><strong>Digital Skills / IT User Training</strong> – productivity tools, online collaboration, and safe use of digital platforms</li>
-                    <li><strong>Self-Led Learning</strong> – online tutorials and documentation on responsive design and restaurant-focused UX</li>
-                </ul>
-            </article>
+        <section class="skills-accordion" aria-label="Skills, education, and experience">
+            <details class="skills-card" open>
+                <summary>
+                    <span class="summary-icon">
+                        <i class="fa-solid fa-laptop-code" aria-hidden="true"></i>
+                    </span>
+                    <span class="summary-title">Digital Skills</span>
+                    <span class="summary-chevron">
+                        <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+                    </span>
+                </summary>
+
+                <div class="skills-card-body">
+                    <ul class="simple-list">
+                        <li>
+                            <strong>Web Development:</strong>
+                            HTML5, CSS3, JavaScript (ES6+), PHP, Python
+                        </li>
+                        <li>
+                            <strong>Front-end Practices:</strong>
+                            semantic HTML, accessibility awareness, mobile-first design, structured UI building
+                        </li>
+                        <li>
+                            <strong>Back-end &amp; Infrastructure:</strong>
+                            Apache, Nginx, MySQL, MongoDB, REST basics
+                        </li>
+                        <li>
+                            <strong>DevOps &amp; Hosting:</strong>
+                            Linux servers, hosting deployments, Docker, environment setup and configuration
+                        </li>
+                        <li>
+                            <strong>Tools &amp; Workflow:</strong>
+                            Git and GitHub, VS Code, browser DevTools, simple wireframing and prototyping
+                        </li>
+                    </ul>
+                </div>
+            </details>
+
+            <details class="skills-card">
+                <summary>
+                    <span class="summary-icon">
+                        <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+                    </span>
+                    <span class="summary-title">Education &amp; Qualifications</span>
+                    <span class="summary-chevron">
+                        <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+                    </span>
+                </summary>
+
+                <div class="skills-card-body">
+                    <ul class="simple-list">
+                        <li>
+                            <strong>BSc (Hons) Business Management with Marketing</strong><br />
+                            Predicted: First Class<br />
+                            The University of Salford, Salford, Manchester<br />
+                            <span class="meta">2023 – Present</span>
+                        </li>
+
+                        <li>
+                            <strong>M+ — Digital T Level</strong><br />
+                            Oldham Sixth Form, Oldham, Manchester<br />
+                            <span class="meta">2021 – 2022</span>
+                        </li>
+
+                        <li>
+                            <strong>M2 — Cambridge Pre-U</strong><br />
+                            The Blue Coat Sixth Form, Oldham, Manchester<br />
+                            <span class="meta">2020 – 2021</span>
+                        </li>
+
+                        <li>
+                            <strong>GCSEs</strong><br />
+                            The Blue Coat School, Oldham, Manchester<br />
+                            <span class="meta">2015 – 2020</span>
+
+                            <div class="gcse-grid" aria-label="GCSE subjects and grades">
+                                <div class="gcse-col">
+                                    <p>Science — 8</p>
+                                    <p>Engineering — 8</p>
+                                    <p>Religious Studies — 8</p>
+                                </div>
+                                <div class="gcse-col">
+                                    <p>Maths — 7</p>
+                                    <p>Business — 7</p>
+                                    <p>English Language — 7</p>
+                                </div>
+                                <div class="gcse-col">
+                                    <p>English Literature — 6</p>
+                                    <p>History — 6</p>
+                                    <p>French — 5</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </details>
+
+            <details class="skills-card">
+                <summary>
+                    <span class="summary-icon">
+                        <i class="fa-solid fa-briefcase" aria-hidden="true"></i>
+                    </span>
+                    <span class="summary-title">Work Experience</span>
+                    <span class="summary-chevron">
+                        <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+                    </span>
+                </summary>
+
+                <div class="skills-card-body">
+                    <ul class="simple-list">
+                        <li>
+                            <strong>Digital Solutions Assistant (Work Placement)</strong><br />
+                            <span class="meta">Digital Next, The Sharp Project, Manchester · Sept 2022 – Dec 2022</span><br />
+                            Worked as part of a small digital team to plan, build, and optimise a complete online presence for a mock e-commerce brand.
+                            Key responsibilities included:
+                            <ul class="nested-list">
+                                <li>Collaborated with a multi-disciplinary team, allocating tasks based on technical strengths to streamline workflow.</li>
+                                <li>Developed a fully functional, SEO-optimised e-commerce website using modern web technologies.</li>
+                                <li>Designed a consistent digital brand identity using Adobe Photoshop and lightweight UI design principles.</li>
+                                <li>Performed market and keyword research to identify high-value search terms and user intent patterns.</li>
+                                <li>Implemented on-page SEO, improving ranking and reaching first-page visibility for targeted keywords.</li>
+                                <li>Created blog content supporting organic growth and reinforcing the site’s authority.</li>
+                                <li>Identified high-domain-authority websites for backlinks, improving overall domain trust metrics.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </details>
+
+            <details class="skills-card">
+                <summary>
+                    <span class="summary-icon">
+                        <i class="fa-solid fa-certificate" aria-hidden="true"></i>
+                    </span>
+                    <span class="summary-title">Certifications &amp; Training</span>
+                    <span class="summary-chevron">
+                        <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+                    </span>
+                </summary>
+
+                <div class="skills-card-body">
+                    <ul class="simple-list">
+                        <li>
+                            <strong>Microsoft Project 2019 Essential Training</strong><br />
+                            LinkedIn Learning · By Bonnie Biafore · Completed 22 Apr 2025
+                        </li>
+                        <li>
+                            <strong>MOS: Outlook Associate (Office 2019 / 365) — Exam Prep</strong><br />
+                            LinkedIn Learning · By Megan Bross · Completed 12 Dec 2023
+                        </li>
+                        <li>
+                            <strong>MOS: Word Associate (Microsoft 365 Apps) — Exam Prep</strong><br />
+                            LinkedIn Learning · By Jennifer McBee · Completed 14 Dec 2023
+                        </li>
+                        <li>
+                            <strong>MOS: PowerPoint Associate (Office 2019) — Exam Prep</strong><br />
+                            LinkedIn Learning · By Megan Bross · Completed 13 Dec 2023
+                        </li>
+                        <li>
+                            <strong>MOS: Excel Associate (Microsoft 365 Apps) — Exam Prep</strong><br />
+                            LinkedIn Learning · By Jennifer McBee · Completed 10 Dec 2023
+                        </li>
+                        <li>
+                            <strong>Self-Directed Development</strong><br />
+                            Ongoing learning in software tools, digital productivity, and modern technical workflows.
+                        </li>
+                    </ul>
+                </div>
+            </details>
         </section>
     </main>
 
-    <!-- FOOTER -->
     <footer class="footer">
-        <p>&copy; <span id="year"></span> [Your Name]. All Rights Reserved.</p>
+        <div class="footer-inner">
+            <p class="footer-text">
+                <i class="fa-regular fa-copyright" aria-hidden="true"></i>
+                <span id="year"></span> Bhuvan K. · Built with HTML, CSS &amp; JavaScript
+            </p>
+            <div class="footer-social">
+                <a
+                    href="https://github.com/sunny-bk"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Visit my GitHub profile (opens in a new tab)"
+                >
+                    <i class="fa-brands fa-github" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
     </footer>
 
     <script src="script.js"></script>

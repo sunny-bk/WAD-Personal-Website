@@ -4,14 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio – Contact</title>
+    <meta name="description" content="Contact details and online links to get in touch about collaboration, projects, or opportunities." />
     <link rel="stylesheet" href="styles.css" />
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    />
 </head>
 <body>
+    <a href="#contact" class="skip-link">Skip to main content</a>
 
-    <!-- NAVIGATION BAR -->
     <header class="navbar">
         <div class="nav-container">
-            <div class="logo">MyPortfolio</div>
+            <div class="logo">Bhuvan K.</div>
 
             <nav aria-label="Main navigation">
                 <ul class="nav-links" id="nav-links">
@@ -23,7 +31,14 @@
                 </ul>
             </nav>
 
-            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+            <button
+                class="hamburger"
+                id="hamburger"
+                type="button"
+                aria-label="Toggle navigation menu"
+                aria-controls="nav-links"
+                aria-expanded="false"
+            >
                 <span></span>
                 <span></span>
                 <span></span>
@@ -31,66 +46,73 @@
         </div>
     </header>
 
-    <!-- MAIN CONTENT -->
     <main class="page" id="contact">
         <header class="page-header">
             <h1>Get in Touch</h1>
-            <p>If you’d like to reach me for project enquiries, collaboration, or portfolio feedback, you can contact me through any of the platforms below.</p>
+            <p>
+                Whether you would like to discuss a project, collaborate, or simply connect, here are the best ways to reach me.
+            </p>
         </header>
 
-        <section class="contact-wrapper">
-
-            <div class="contact-card-lg">
-                <h2>Contact Details</h2>
+        <section class="contact-wrapper" aria-label="Contact options">
+            <section class="contact-card-lg" aria-labelledby="contact-details-heading">
+                <h2 id="contact-details-heading">
+                    <i class="fa-solid fa-address-book" aria-hidden="true"></i>
+                    <span>Contact Details</span>
+                </h2>
                 <ul class="contact-list">
                     <li>
+                        <i class="fa-solid fa-envelope contact-icon" aria-hidden="true"></i>
                         <strong>Email:</strong>
-                        <a href="mailto:yourname@example.com">yourname@example.com</a>
+                        <a href="mailto:b.koppera@edu.salford.ac.uk">b.koppera@edu.salford.ac.uk</a>
                     </li>
                     <li>
+                        <i class="fa-solid fa-phone contact-icon" aria-hidden="true"></i>
                         <strong>Phone:</strong>
-                        <a href="tel:+447700900123">+44 7700 900123</a>
+                        <a href="tel:+447392544626">+44 7392 544626</a>
                     </li>
                 </ul>
-            </div>
+            </section>
 
-            <div class="contact-card-lg">
-                <h2>Connect Online</h2>
+            <section class="contact-card-lg" aria-labelledby="online-links-heading">
+                <h2 id="online-links-heading">
+                    <i class="fa-solid fa-globe" aria-hidden="true"></i>
+                    <span>Connect Online</span>
+                </h2>
                 <ul class="contact-list">
                     <li>
-                        <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
-                            LinkedIn Profile
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-github contact-icon" aria-hidden="true"></i>
+                        <a
+                            href="https://github.com/sunny-bk"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="View my GitHub portfolio (opens in a new tab)"
+                        >
                             GitHub Portfolio
                         </a>
                     </li>
-                    <li>
-                        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
-                            Instagram
-                        </a>
-                    </li>
                 </ul>
-            </div>
-
+            </section>
         </section>
-
-        <section class="design-notes">
-            <h2>Design Notes</h2>
-            <p>
-                This page provides a clear and accessible way to contact me. All links are fully functional,
-                labelled, and grouped into two sections: direct contact (email/phone) and online profiles.
-                The layout is intentionally minimal to keep the focus on clarity and usability.
-            </p>
-        </section>
-
     </main>
 
-    <!-- FOOTER -->
     <footer class="footer">
-        <p>&copy; <span id="year"></span> [Your Name]. All Rights Reserved.</p>
+        <div class="footer-inner">
+            <p class="footer-text">
+                <i class="fa-regular fa-copyright" aria-hidden="true"></i>
+                <span id="year"></span> Bhuvan K. · Built with HTML, CSS &amp; JavaScript
+            </p>
+            <div class="footer-social">
+                <a
+                    href="https://github.com/sunny-bk"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Visit my GitHub profile (opens in a new tab)"
+                >
+                    <i class="fa-brands fa-github" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
     </footer>
 
     <script src="script.js"></script>
